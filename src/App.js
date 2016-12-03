@@ -17,7 +17,9 @@ class App extends Component {
   render() {
     return (
       <div id="page-top" class="index">
-        <MainNav/>
+        <MainNav menus={
+          ['Services', 'Portfolio', 'About', 'Team', 'Contact']
+        }/>
         <Header/>
         <Services/>
         <Portfolio/>

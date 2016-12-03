@@ -1,6 +1,11 @@
 import React from 'react';
 
-const MainNav = () => (
+const renderMenu = (menus) => menus.map((menu) => (
+  <li>
+      <a className="page-scroll" href={`#${menu.toLowerCase()}`}>{menu}</a>
+  </li>
+));
+const MainNav = ({ menus }) => (
   <nav id="mainNav" className="navbar navbar-default navbar-custom navbar-fixed-top">
       <div className="container">
           <div className="navbar-header page-scroll">
@@ -15,21 +20,7 @@ const MainNav = () => (
                   <li className="hidden">
                       <a href="#page-top"></a>
                   </li>
-                  <li>
-                      <a className="page-scroll" href="#services">Services</a>
-                  </li>
-                  <li>
-                      <a className="page-scroll" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li>
-                      <a className="page-scroll" href="#about">About</a>
-                  </li>
-                  <li>
-                      <a className="page-scroll" href="#team">Team</a>
-                  </li>
-                  <li>
-                      <a className="page-scroll" href="#contact">Contact</a>
-                  </li>
+                  {renderMenu(menus)}
               </ul>
           </div>
       </div>
