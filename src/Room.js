@@ -120,7 +120,7 @@ export default class Room extends React.Component {
               <div className="col-md-3">
                   <div className="thumbnail">
                       <div className="caption-full">
-                          <img src="user.png" className="userImg" />
+                          <img src="img/team/2.jpg" className="userImg img-circle" />
                           <p className="hostUser"><strong>Jim Zimmer</strong></p>
                           <span className="glyphicon glyphicon-earphone"> 081-111-1111</span>
                       </div>
