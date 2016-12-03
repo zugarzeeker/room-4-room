@@ -14,9 +14,9 @@ const List = () => (
     <Item item={'oo'}/>*/}
     <div className="container">
       <ListHeader/>
-      <Item/>
-      <Item/>
-      <Item/>
+      <Item data={1}/>
+      <Item data={2}/>
+      <Item data={3}/>
       <Pagination/>
     </div>
   </div>

@@ -12,7 +12,7 @@ export default class Room extends React.Component {
     this.state = {
       startDate: moment(),
       endDate: moment(),
-      openModal: true
+      openModal: false
     };
   }
 
@@ -26,6 +26,12 @@ export default class Room extends React.Component {
     });
   }
 
+  openModal() {
+    this.setState({
+      openModal: true
+    });
+  }
+
   render() {
     return (
       <div className="container">
@@ -34,8 +40,10 @@ export default class Room extends React.Component {
                   <div className="thumbnail">
                       <img className="img-responsive" src="http://placehold.it/800x300" alt="" />
                       <div className="caption-full">
-                          <h4 className="pull-right">$24.99</h4>
-                          <h4><a href="#">Product Name</a>
+                          <button type="button" className="pull-right btn btn-primary" onClick={() => this.openModal()}>
+                            Booking (4 night)
+                          </button>
+                          <h4><a href="#">Extra Room</a>
                           </h4>
                           <p>See more snippets like these online store reviews at <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
                           <p>Want to make these reviews work? Check out
