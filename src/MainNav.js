@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-const renderMenu = (menus) => menus.map((menu) => (
+const renderMenu = (menus = []) => menus.map((menu) => (
   <li>
       <a className="page-scroll" href={`#${menu.toLowerCase()}`}>{menu}</a>
   </li>
@@ -12,7 +13,7 @@ const MainNav = ({ menus }) => (
               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
               </button>
-              <a className="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+              <Link className="navbar-brand page-scroll" to={(menus || []).length === 5 ? "#page-top" : "/"}>Start Bootstrap</Link>
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

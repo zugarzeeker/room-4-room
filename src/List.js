@@ -1,7 +1,8 @@
 import React from 'react';
+import MainNav from './MainNav';
 
 const List = () => (
-  <div>List</div>
+  <MainNav/>
 );
 
 export default List;
