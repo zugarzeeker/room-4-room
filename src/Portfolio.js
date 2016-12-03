@@ -17,7 +17,7 @@ const Portfolio = () => (
                               <i className="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/1.png" className="img-responsive" alt="" />
+                      <img src="img/1.jpg" className="img-responsive" alt="" />
                   </a>
                   <div className="portfolio-caption">
                       <h4>Round Icons</h4>
@@ -31,7 +31,7 @@ const Portfolio = () => (
                               <i className="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/2.png" className="img-responsive" alt="" />
+                      <img src="img/2.jpg" className="img-responsive" alt="" />
                   </a>
                   <div className="portfolio-caption">
                       <h4>Startup Framework</h4>
@@ -45,7 +45,7 @@ const Portfolio = () => (
                               <i className="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/3.png" className="img-responsive" alt="" />
+                      <img src="img/3.jpg" className="img-responsive" alt="" />
                   </a>
                   <div className="portfolio-caption">
                       <h4>Treehouse</h4>
@@ -67,7 +67,7 @@ const Portfolio = () => (
                               <i className="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/4.png" className="img-responsive" alt="" />
+                      <img src="img/4.jpg" className="img-responsive" alt="" />
                   </a>
                   <div className="portfolio-caption">
                       <h4>Golden</h4>
@@ -81,7 +81,7 @@ const Portfolio = () => (
                               <i className="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/5.png" className="img-responsive" alt="" />
+                      <img src="img/5.jpg" className="img-responsive" alt="" />
                   </a>
                   <div className="portfolio-caption">
                       <h4>Escape</h4>
@@ -95,7 +95,7 @@ const Portfolio = () => (
                               <i className="fa fa-plus fa-3x"></i>
                           </div>
                       </div>
-                      <img src="img/6.png" className="img-responsive" alt="" />
+                      <img src="img/6.jpg" className="img-responsive" alt="" />
                   </a>
                   <div className="portfolio-caption">
                       <h4>Dreams</h4>
