@@ -10,8 +10,16 @@ export default class SearchBox extends React.Component {
     super();
     this.state = {
       startDate: moment(),
-      endDate: moment()
+      endDate: moment(),
+      guests: 0
     };
+  }
+
+  updateGuests(diff) {
+    const newCount = this.state.guests + diff;
+    this.setState({
+      guests: newCount >= 0 ? newCount : 0
+    });
   }
 
   handleDateChange(date, target) {
@@ -43,11 +51,12 @@ export default class SearchBox extends React.Component {
             </div>
           </div>
           <div className="col-md-2 guests">
-            <label for="guests">Guests</label>
+            <label for="guests">Guests
+              <span className={cn('guest-number')}>{this.state.guests}</span>
+            </label>
             <div className="guestCount">
-              <input type="text" name="" value="1 guest" />
-              <button type="button" className="btn btn-default plus"> + </button>
-              <button type="button" className="btn btn-default minus"> - </button>
+              <button type="button" className="btn btn-success plus" onClick={() => this.updateGuests(1)}>+</button>
+              <button type="button" className="btn btn-danger minus" onClick={() => this.updateGuests(-1)}>-</button>
             </div>
           </div>
           <div className="col-md-2 stars">

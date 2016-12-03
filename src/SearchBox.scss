@@ -14,6 +14,22 @@
 
 }
 
+.guest-number {
+  margin-left: 15px;
+  text-decoration: underline;
+}
+
+.guestCount {
+  text-align: center;
+  .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .minus {
+    margin-left: 10px;
+  }
+}
+
 .whenDate {
   flex-direction: row;
   text-align: center;
@@ -30,6 +46,10 @@
 
 .guests button {
   width: 20px;
+  .btn {
+    font-size: 1.5px;
+    padding-right: 20px;
+  }
 }
 input {
   background: transparent;
