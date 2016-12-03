@@ -12,7 +12,8 @@ class App extends Component {
     return (
       <div id="page-top" className="index">
         <MainNav menus={
-          ['Services', 'Portfolio', 'About', 'Team', 'Contact']
+          // ['Services', 'Portfolio', 'About', 'Team', 'Contact']
+          ['Login', 'Register']
         }/>
         {this.props.children}
       </div>

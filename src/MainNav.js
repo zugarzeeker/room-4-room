@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
+import './MainNav.scss'
+import cn from 'classnames';
 
 const renderMenu = (menus = []) => menus.map((menu) => (
   <li>
@@ -13,7 +15,9 @@ const MainNav = ({ menus }) => (
               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
               </button>
-              <Link className="navbar-brand page-scroll" to={(menus || []).length === 5 ? "#page-top" : "/"}>Start Bootstrap</Link>
+              <Link className="navbar-brand page-scroll logo" to={(menus || []).length === 5 ? "#page-top" : "/"}>
+                <img src="logo.png"/>
+              </Link>
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
