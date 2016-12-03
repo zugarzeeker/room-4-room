@@ -13,7 +13,7 @@ export default class SearchBox extends React.Component {
     this.state = {
       startDate: moment(),
       endDate: moment(),
-      guests: 0,
+      guests: 1,
       rating: 4
     };
   }
@@ -27,7 +27,7 @@ export default class SearchBox extends React.Component {
   updateGuests(diff) {
     const newCount = this.state.guests + diff;
     this.setState({
-      guests: newCount >= 0 ? newCount : 0
+      guests: newCount >= 1 ? newCount : 1
     });
   }
 
