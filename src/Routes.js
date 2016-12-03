@@ -7,6 +7,8 @@ const Routes = () => (
   <Router history={browserHistory}>
     <Route path="/" component={App}/>
     <Route path="/list" component={List}/>
+    <Route path="/detail" component={List}/>
+    <Route path="/map" component={List}/>
   </Router>
 );
 
