@@ -12,15 +12,17 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Portfolio from './Portfolio';
 import PortfolioModal from './PortfolioModal';
+import SearchBox from './SearchBox';
 
 class App extends Component {
   render() {
     return (
-      <div id="page-top" class="index">
+      <div id="page-top" className="index">
         <MainNav menus={
           ['Services', 'Portfolio', 'About', 'Team', 'Contact']
         }/>
         <Header/>
+        <SearchBox/>
         <Services/>
         <Portfolio/>
         <About/>

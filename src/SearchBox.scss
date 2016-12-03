@@ -1,3 +1,42 @@
-.search-box {
-  background-color: blue;
+.searchBox {
+  margin-top: 100px;
+  box-shadow: 0 2px 5px #888888;
+}
+
+.where, .when, .stars, .searchButton, .guests {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchButton button{
+
+}
+
+.whenDate {
+  flex-direction: row;
+  text-align: center;
+  span {
+    margin: 0 6px;
+  }
+  .react-datepicker__input-container {
+    width: 40%;
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.guests button {
+  width: 20px;
+}
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.col-md-3, .col-md-2 {
+  height: 100px;
 }

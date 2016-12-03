@@ -119,6 +119,10 @@ module.exports = {
       //   loader: 'style!css!postcss'
       // },
       {
+        test: /\.css$/,
+        loader: 'style!css?importLoaders=1!postcss'
+      },
+      {
         test: /\.scss$/,
         loaders: ["style", "css", "sass"]
       },
