@@ -63,7 +63,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js && sed -i -- 's/=\"\//=\".\//g' ./build/index.html",
     "test": "node scripts/test.js --env=jsdom",
     "gh-pages": "./deploy/deployToGitHubPages"
   },
