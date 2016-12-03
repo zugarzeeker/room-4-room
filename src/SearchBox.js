@@ -5,6 +5,7 @@ import moment from 'moment';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import StarRatingComponent from 'react-star-rating-component';
+import { Link } from 'react-router';
 
 export default class SearchBox extends React.Component {
   constructor() {
@@ -79,10 +80,10 @@ export default class SearchBox extends React.Component {
             </div>
           </div>
           <div className="col-md-2 searchButton">
-            <button type="button" className="btn btn-primary">
+            <Link to="/list" className="btn btn-primary">
               <i className="fa fa-search searchIcon"/>
               Search
-            </button>
+            </Link>
           </div>
         </div>
       </div>
