@@ -4,9 +4,9 @@ const Header = () => (
   <header>
       <div className="container">
           <div className="intro-text">
-              <div className="intro-lead-in">Welcome To Our Studio!</div>
-              <div className="intro-heading">It's Nice To Meet You</div>
-              <a href="#services" className="page-scroll btn btn-xl">Tell Me More</a>
+              <div className="intro-heading">Welcome To Our Zimmer!</div>
+              <div className="intro-lead-in">Find affordable room anywhere & anytime</div>
+              <a href="#services" className="page-scroll btn btn-xl">Why you use Zimmer ?</a>
           </div>
       </div>
   </header>
