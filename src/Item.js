@@ -2,6 +2,7 @@ import React from 'react';
 import './Item.scss';
 import { Link } from 'react-router';
 import _ from 'lodash';
+import StarRatingComponent from 'react-star-rating-component';
 
 const Item = ({ item, data }) => (
   <div className="row">
@@ -15,9 +16,19 @@ const Item = ({ item, data }) => (
           {/*<h4>{data} night</h4>*/}
           {/*<h4>{data} night</h4>*/}
           {/*<h4>{data} night</h4>*/}
-          {_.range(data).map(() => (
-            <i className="fa fa-moon-o night-icon"></i>
-          ))}
+          <div>
+            {_.range(data + 3).map(() => (
+              <i className="fa fa-moon-o night-icon"/>
+            ))}
+          </div>
+          <div className="star-rating">
+            <StarRatingComponent
+              name="rate1"
+              starCount={5}
+              value={data + 2}
+              onStarClick={() => {}}
+            />
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
           <Link className="btn btn-primary" href="/room">View Detail <span className="glyphicon glyphicon-chevron-right"></span></Link>
       </div>
