@@ -30,7 +30,7 @@ const Item = ({ item, data }) => (
             />
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <Link className="btn btn-primary" href="/room">View Detail <span className="glyphicon glyphicon-chevron-right"></span></Link>
+          <Link className="btn btn-primary" to="/room">View Detail <span className="glyphicon glyphicon-chevron-right"></span></Link>
       </div>
   </div>
 );

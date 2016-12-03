@@ -63,9 +63,9 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js && sed -i -- 's/=\"\//=\".\//g' ./build/index.html",
+    "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "gh-pages": "./deploy/deployToGitHubPages"
+    "gh-pages": "gh-pages -d build"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -93,5 +93,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/zugarzeeker/room-4-room/issues"
+  },
+  "homepage": "./"
 }

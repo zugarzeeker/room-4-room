@@ -16,7 +16,10 @@ const MainNav = ({ menus }) => (
                   <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
               </button>
               <Link className="navbar-brand page-scroll logo" to={(menus || []).length === 5 ? "#page-top" : "/"}>
-                <img src="logo.png"/>
+                <span>
+                  <img src="logo.png"/>
+                  Zimmer
+                </span>
               </Link>
           </div>
 

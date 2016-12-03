@@ -6,7 +6,7 @@ import MainNav from './MainNav';
 
 class App extends Component {
   render() {
-    if (!window.location.pathname.includes('home')) {
+    if (!this.props.location.pathname.includes('home') && !window.location.pathname.includes('home') && !(new RegExp('index.html$')).test(window.location.pathname)) {
       ((document.getElementById('mainNav') || {}).style || {}).position = "relative";
     }
     return (
