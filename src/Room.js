@@ -42,10 +42,17 @@ export default class Room extends React.Component {
                       <img className="img-responsive" src="img/6.jpg" alt="" />
                       <div className="caption-full">
                           <button type="button" className="pull-right btn btn-primary" onClick={() => this.openModal()}>
-                            Booking (4 night)
+                            Booking (3 night)
                           </button>
-                          <h4><a href="#">Extra Room</a>
+                          <h4><a href="#">Privte Room in Bangkok</a>
                           </h4>
+                          <h5>
+                            Water Unit: 18 Baht / unit
+                          </h5>
+                          <h5>
+                            Electricity: 7 Baht / unit
+                          </h5>
+
                           <p>See more snippets like these online store reviews at <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
                           <p>Want to make these reviews work? Check out
                               <strong><a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
