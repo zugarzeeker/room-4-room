@@ -51,6 +51,7 @@ export default class Room extends React.Component {
                               </strong>over at maxoffsky.com!</p>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                       </div>
+                      <iframe className="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.6612671904145!2d100.58716994797165!3d13.738946300214062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29e4e61fa8821%3A0x54a075c70d2b787a!2sPlaylab+Games!5e0!3m2!1sth!2sth!4v1480767784963"></iframe>
                       <div className="ratings">
                           <p className="pull-right">3 reviews</p>
                           <p>
@@ -120,7 +121,7 @@ export default class Room extends React.Component {
               <div className="col-md-3">
                   <div className="thumbnail">
                       <div className="caption-full">
-                          <img src="img/team/2.jpg" className="userImg img-circle" />
+                          <img src="img/team/2.jpg" className="userImg img-" />
                           <p className="hostUser"><strong>Jim Zimmer</strong></p>
                           <span className="glyphicon glyphicon-earphone"> 081-111-1111</span>
                       </div>
