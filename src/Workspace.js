@@ -16,7 +16,7 @@ const Workspace = () => (
     <SearchBox/>
     <Services/>
     <Portfolio/>
-    <About/>
+    {/*<About/>*/}
     <Team/>
     <Clients/>
     <Contact/>
