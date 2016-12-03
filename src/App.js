@@ -6,7 +6,7 @@ import cn from 'classnames';
 class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div id="page-top" class="index">
         <nav id="mainNav" className="navbar navbar-default navbar-custom navbar-fixed-top">
             <div className="container">
                 <div className="navbar-header page-scroll">
