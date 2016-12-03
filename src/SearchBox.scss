@@ -8,6 +8,9 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
+  .rating-stars {
+    font-size: 30px;
+  }
 }
 
 .searchButton button{

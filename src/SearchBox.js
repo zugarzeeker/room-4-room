@@ -4,6 +4,7 @@ import './SearchBox.scss';
 import moment from 'moment';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import StarRatingComponent from 'react-star-rating-component';
 
 export default class SearchBox extends React.Component {
   constructor() {
@@ -11,8 +12,15 @@ export default class SearchBox extends React.Component {
     this.state = {
       startDate: moment(),
       endDate: moment(),
-      guests: 0
+      guests: 0,
+      rating: 4
     };
+  }
+
+  onStarClick(nextValue, prevValue, name) {
+    this.setState({
+      rating: nextValue
+    });
   }
 
   updateGuests(diff) {
@@ -61,14 +69,13 @@ export default class SearchBox extends React.Component {
           </div>
           <div className="col-md-2 stars">
             <label for="stars">Stars</label>
-            <div className="dropdown">
-              <button className="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-              <span className="caret"></span></button>
-              <ul className="dropdown-menu">
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">JavaScript</a></li>
-              </ul>
+            <div className={cn('rating-stars')}>
+              <StarRatingComponent
+                name="rate1"
+                starCount={5}
+                value={this.state.rating}
+                onStarClick={this.onStarClick.bind(this)}
+              />
             </div>
           </div>
           <div className="col-md-2 searchButton">
