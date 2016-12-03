@@ -6,7 +6,7 @@ const Item = ({ item, data }) => (
   <div className="row">
       <div className="col-md-7">
           <a href="#">
-              <img className="img-responsive" src="http://placehold.it/700x300" alt=""/>
+              <img className="img-responsive" src={`img/${data}.jpg`} alt=""/>
           </a>
       </div>
       <div className="col-md-5">

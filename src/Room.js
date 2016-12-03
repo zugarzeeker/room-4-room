@@ -38,7 +38,8 @@ export default class Room extends React.Component {
           <div className="row">
               <div className="col-md-9">
                   <div className="thumbnail">
-                      <img className="img-responsive" src="http://placehold.it/800x300" alt="" />
+                      {/*<img className="img-responsive" src="http://placehold.it/800x300" alt="" />*/}
+                      <img className="img-responsive" src="img/6.jpg" alt="" />
                       <div className="caption-full">
                           <button type="button" className="pull-right btn btn-primary" onClick={() => this.openModal()}>
                             Booking (4 night)
@@ -121,7 +122,7 @@ export default class Room extends React.Component {
               <div className="col-md-3">
                   <div className="thumbnail">
                       <div className="caption-full">
-                          <img src="img/team/2.jpg" className="userImg img-" />
+                          <img src="img/team/2.jpg" className="userImg img-circle" />
                           <p className="hostUser"><strong>Jim Zimmer</strong></p>
                           <span className="glyphicon glyphicon-earphone"> 081-111-1111</span>
                       </div>
